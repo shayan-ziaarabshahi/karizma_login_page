@@ -1,0 +1,161 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.loginBox {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5rem 3rem;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.header {
+  display: block;
+  margin-bottom: 2.5rem;
+  font-size: large;
+}
+
+.fieldSection {
+  margin-bottom: 1.5rem;
+}
+
+.fieldSection label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fieldSection input {
+  display: block;
+  color: white;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  min-width: 300px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fieldSection input:focus {
+  outline: 1px solid white;
+}
+
+.passwordInputContainer {
+  position: relative;
+}
+
+.eyeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: purple;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.eyeIcon {
+  pointer-events: none;
+  font-size: 1.25rem;
+  width: 27px;
+  height: 27px;
+  display: block;
+}
+
+.errorMessage {
+  font-size: small;
+  color: red;
+  direction: rtl;
+}
+
+.forgetLink {
+  display: block;
+  cursor: pointer;
+  font-size: small;
+  color: purple;
+  margin-bottom: 1rem;
+}
+.forgetLink:hover {
+  text-decoration: underline;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.signIn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0.5rem;
+  cursor: pointer;
+  width: 75px;
+  height: 30px;
+  font-family: inherit;
+}
+
+.googleSignInContainer {
+  position: relative;
+  width: 75px;
+  height: 30px;
+  overflow: hidden;
+  font-size: small;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.googleSignInButton {
+  position: absolute;
+  opacity: 0.01;
+}
+
+.googleSignInCover {
+  cursor: pointer;
+  pointer-events: none !important;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.signUp {
+  direction: rtl;
+  display: block;
+  text-align: start;
+  font-size: small;
+  color: purple;
+  cursor: pointer;
+}
+.signUp:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .fieldSection input {
+    min-width: 200px;
+  }
+}
